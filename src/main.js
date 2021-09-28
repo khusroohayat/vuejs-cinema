@@ -15,6 +15,9 @@ Object.defineProperty(Vue.prototype, '$bus', { get() { return this.$root.bus } }
 import VueRouter from 'vue-router';
 Vue.use(VueRouter);
 
+import Tooltip from './util/tooltip';
+Vue.use(Tooltip);
+
 import routes from './util/routes';
 const router = new VueRouter({ routes });
 
